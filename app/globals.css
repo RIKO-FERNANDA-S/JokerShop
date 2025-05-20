@@ -5,6 +5,19 @@
   --foreground: #171717;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #0B0020;
+}
+
+.text-outline-gradient{
+  color: transparent;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0b0020;
 }
