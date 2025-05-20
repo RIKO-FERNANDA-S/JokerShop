@@ -14,9 +14,6 @@ const poppins = Poppins({
     weight: '400'
 })
 
-
-
-
 function Navbar() {
 
     const [Oscroll, setScroll] = useState(false);
@@ -33,7 +30,6 @@ function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [])
-
 
 
   return (
