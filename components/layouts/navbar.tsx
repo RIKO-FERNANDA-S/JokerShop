@@ -43,7 +43,7 @@ function Navbar() {
             <Link href="#" className='text-lg'>Beranda</Link>
             <Link href="#tentang" className='text-lg'>Tentang</Link>
             <Link href="#katalog" className='text-lg'>Katalog</Link>
-            <Link href="" className='text-lg'>Informasi</Link>
+            <Link href="" className='text-lg'>FAQ</Link>
         </div>
 
         <button className='flex bg-[#E0B7FF] h-max px-4 py-2 items-center gap-3 rounded-full cursor-pointer hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out '>

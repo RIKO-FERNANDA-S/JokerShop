@@ -11,7 +11,7 @@ const poppins = Poppins({subsets: ['latin'], weight: '200'})
 function Tentang() {
   return (
     <main className={`w-full h-screen flex items-center justify-center ${poppins.className} px-14`} id='tentang'>
-        <div className='w-1/2'>
+        <div className='w-1/2' data-aos="fade-right">
           <Image src={Laptop} alt='laptop'></Image>
         </div>
         <div className='w-1/2 text-white flex flex-col justify-center'>

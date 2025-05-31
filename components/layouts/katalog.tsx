@@ -6,9 +6,6 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
-// FONT
-import { Poppins } from "next/font/google";
-
 // Slider
 import "@splidejs/react-splide"
 import "@splidejs/react-splide/css";
@@ -16,19 +13,22 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 // Image
 import Image from "next/image";
-import Img1 from "@/public/img/produk/INSTAGRAM _20250424_235112_0000.jpg";
-import Img2 from "@/public/img/produk/INSTAGRAM _20250424_235450_0000.jpg";
-import Img3 from "@/public/img/produk/INSTAGRAM _20250424_235652_0000.jpg";
-import Img4 from "@/public/img/produk/INSTAGRAM _20250424_235815_0000.jpg";
-import Img5 from "@/public/img/produk/INSTAGRAM _20250424_235937_0000.jpg";
-import Img6 from "@/public/img/produk/INSTAGRAM _20250425_000023_0000.jpg";
-import Img7 from "@/public/img/produk/INSTAGRAM _20250425_000402_0000.jpg";
-import Img8 from "@/public/img/produk/INSTAGRAM _20250425_000619_0000.jpg";
-import Img9 from "@/public/img/produk/INSTAGRAM _20250425_000844_0000.jpg";
-import Img10 from "@/public/img/produk/INSTAGRAM _20250425_001215_0000.jpg";
-import Img11 from "@/public/img/produk/INSTAGRAM _20250425_001406_0000.jpg";
-import Img12 from "@/public/img/produk/INSTAGRAM _20250425_001651_0000.jpg";
+import Img1 from "@/public/img/produk/premium/apk (1).jpg";
+import Img2 from "@/public/img/produk/premium/apk (2).jpg";
+import Img3 from "@/public/img/produk/premium/apk (3).jpg";
+import Img4 from "@/public/img/produk/premium/apk (4).jpg";
+import Img5 from "@/public/img/produk/premium/apk (5).jpg";
+import Img6 from "@/public/img/produk/premium/apk (6).jpg";
+import Img7 from "@/public/img/produk/premium/apk (7).jpg";
+import Img8 from "@/public/img/produk/premium/apk (8).jpg";
+import Img9 from "@/public/img/produk/premium/apk (9).jpg";
+import Img10 from"@/public/img/produk/premium/apk (10).jpg";
+import Img11 from"@/public/img/produk/premium/apk (11).jpg";
+import Img12 from"@/public/img/produk/premium/apk (12).jpg";
 
+// Font
+import TextKatalog from "./UI/textKatalog";
+import { Poppins } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "200",
@@ -40,13 +40,14 @@ function Katalog() {
       className={`w-full h-screen flex flex-col items-center justify-start ${poppins.className}`}
       id="katalog"
     >
-      <h1 className=" text-9xl font-bold bg-gradient-to-b from-[#FFFFFF] from-[1%] to-[#99999900] h-max w-max text-outline-gradient">
-        KATALOG
-      </h1>
+    
+    <div>
+      <TextKatalog/>
+    </div>
 
       <div className="w-full flex flex-col mt-8">
         <div className="w-full flex justify-end pr-10">
-        <Link href="/" className="text-white">View More <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color:"white"}} className="ml-3" /></Link>
+        <Link href="/katalog" className="text-white">Lihat Lebih <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color:"white"}} className="ml-3" /></Link>
         </div>
       <div className="mt-5 w-full flex gap-1">
         <Splide

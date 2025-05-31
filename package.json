@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
+    "aos": "^3.0.0-beta.6",
     "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20.17.47",
     "@types/react": "^19",
     "@types/react-dom": "^19",

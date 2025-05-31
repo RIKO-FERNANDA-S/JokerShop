@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import icon from "@/public/img/logo/joker.png"
+import AOSinit from "@/components/layouts/UI/AOSinit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <AOSinit/>
         {children}
       </body>
     </html>
