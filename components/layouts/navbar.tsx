@@ -4,7 +4,6 @@ import Image from 'next/image'
 import logo from "@/public/img/logo/2.png"
 import { Poppins } from 'next/font/google'
 import flagIDN from "@/public/img/language/idn.png"
-import flagUK from "@/public/img/language/uk.png"
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
