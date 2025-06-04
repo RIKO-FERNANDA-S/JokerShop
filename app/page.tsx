@@ -6,6 +6,7 @@ const Navbar = dynamic(() => import('@/components/layouts/navbar'), {ssr:false})
 const HeroSec = dynamic(() => import('@/components/layouts/hero'), {ssr:false})
 const Tentang = dynamic(() => import('@/components/layouts/tentang'), {ssr:false})
 const Katalog = dynamic(() => import('@/components/layouts/katalog'), {ssr:false})
+const Information = dynamic(() => import('@/components/layouts/informasi'), {ssr:false})
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSec/>
       <Tentang/>
       <Katalog/>
+      <Information/>
     </main>
   );
 }

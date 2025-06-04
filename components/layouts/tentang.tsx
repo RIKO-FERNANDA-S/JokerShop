@@ -15,10 +15,9 @@ function Tentang() {
           <Image src={Laptop} alt='laptop'></Image>
         </div>
         <div className='w-1/2 text-white flex flex-col justify-center'>
-        <p>Tentang Joker Store</p>
-        <h1 className='text-4xl font-bold'>Akses Premium Tanpa Ribet</h1>
-        <p className='text-lg w-[90%] mt-4'>Kami memberikan kemudahan berlangganan aplikasi premium favorit Anda dengan harga lebih terjangkau. Nikmati fitur lengkap, pembaruan rutin, dan dukungan eksklusif—tanpa biaya tersembunyi atau kontrak rumit.</p>
-        <div className='flex mt-10 gap-5'>
+        <h1 data-aos="fade-up" className='text-4xl font-bold'>Akses Premium Tanpa Ribet</h1>
+        <p data-aos="fade-up" className='text-lg w-[90%] mt-4'>Kami memberikan kemudahan berlangganan aplikasi premium favorit Anda dengan harga lebih terjangkau. Nikmati fitur lengkap, pembaruan rutin, dan dukungan eksklusif—tanpa biaya tersembunyi atau kontrak rumit.</p>
+        <div data-aos="fade-up" className='flex mt-10 gap-5'>
           <Image src={CEO} alt='yoga' className='w-24 rounded-full border-2 border-white hover:shadow-[0px_0px_30px_#712398] transition-all ease-in'></Image>
           <div className='flex flex-col justify-center gap-2'>
             <p className='text-sm'>CO Founder</p>

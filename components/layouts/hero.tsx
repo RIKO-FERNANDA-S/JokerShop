@@ -2,6 +2,7 @@
 import React from "react";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
+import Button from "./UI/button";
 
 const poppins1 = Poppins({
   subsets: ["latin"],
@@ -33,13 +34,15 @@ function Hero() {
           aktivitas harianmu.
         </p>
 
-        <Link href="https://wa.me/6285646034133?text=Hallo%20min%20saya%20mau%20dong%20langganan%20aplikasi%20premiumnyaa..." className={`${poppins2.className} bg-[#6E2D9F] px-20 w-max py-1 h-max rounded-2xl shadow-[3px_3px_#A6BFF6] hover:translate-1 transition-all hover:shadow-none`}>
+        {/* <Link href="https://wa.me/6285646034133?text=Hallo%20min%20saya%20mau%20dong%20langganan%20aplikasi%20premiumnyaa..." className={`${poppins2.className} bg-[#6E2D9F] px-20 w-max py-1 h-max rounded-2xl shadow-[3px_3px_#A6BFF6] hover:translate-1 transition-all hover:shadow-none`}>
           <h1
             className=""
           >
             Yuk Mulai Langganan Aplikasi Premium
           </h1>
-        </Link>
+        </Link> */}
+
+        <Button/>
       </div>
 
       <div className="w-full h-20 bg-linear-to-b from-[#4a5cc2cc] mask-t-from-1 to-[#0B0020] flex absolute z-10 -bottom-30"></div>
