@@ -38,6 +38,7 @@ export default function RootLayout({
         <ReactLenis root/>
         <AOSinit/>
         {children}
+        
       </body>
     </html>
   );

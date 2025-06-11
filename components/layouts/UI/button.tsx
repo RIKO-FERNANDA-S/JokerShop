@@ -5,9 +5,18 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logoWA from "@/public/img/contact/whatsapp.png"
+import { Poppins } from "next/font/google";
 
+
+
+  const poppins1 = Poppins({
+    subsets: ['latin'],
+    weight: "500"
+  })
 function Button() {
-    const linkRef = useRef<HTMLAnchorElement>(null);
+
+
+  const buttonRef = useRef(null);
     const overlay1Ref = useRef(null);
     const overlay2Ref = useRef(null);
 
@@ -28,18 +37,25 @@ function Button() {
   };
 
   return (
-    <div className="w-[38rem] h-16 flex outline-1 outline-[#A6BFF6] hover:outline-[#305ec2]" >
+    <Link
+    href="/"
+     ref={buttonRef}
+    onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+     className="w-[38rem] h-16 flex outline-1 outline-[#A6BFF6] hover:outline-[#305ec2]" >
+        
+        <div  className={`${poppins1.className} bg-[#A6BFF6] relative overflow-hidden select-none w-full h-full flex items-center justify-center`}
+        
+        >
+        <span ref={overlay1Ref} className="absolute text-xl w-full h-full z-[1] top-0 left-0 pointer-events-none bg-[#305ec2] flex justify-center items-center">Order Now</span>
+          <span ref={ overlay2Ref} className={` relative z-[0] bg-[#77a2fd]  text-xl w-full h-full flex gap-2 justify-center items-center`}>Order Now
+          
+          </span>
+        </div>
         <div className="w-16 h-full bg-transparent flex justify-center items-center">
             <Image src={logoWA} alt="logoWA" width={40} height={40}></Image>
         </div>
-        <Link href="/" ref={linkRef} className="bg-[#A6BFF6] relative overflow-hidden select-none w-full h-full flex items-center justify-center"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        >
-        <span ref={overlay1Ref} className="absolute text-xl w-full h-full z-[1] top-0 left-0 pointer-events-none bg-[#305ec2] flex justify-center items-center">Order Now</span>
-          <span ref={ overlay2Ref} className="relative z-[0] bg-[#77a2fd]  text-xl w-full h-full flex justify-center items-center">Order Now</span>
-        </Link>
-    </div>
+    </Link>
   );
 }
 
