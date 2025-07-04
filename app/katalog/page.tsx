@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
-import TextKatalog from '@/components/layouts/UI/textKatalog'
-import ProductKatalog from '@/components/layouts/UI/productKatalog'
+import TextKatalog from '@/components/UI/textKatalog'
+import ProductKatalog from '@/components/UI/productKatalog'
 
 
 function Katalog() {

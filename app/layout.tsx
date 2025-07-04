@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import AOSinit from "@/components/layouts/UI/AOSinit";
+import AOSinit from "@/components/UI/AOSinit";
 import {ReactLenis} from "lenis/react"
 
 const geistSans = Geist({

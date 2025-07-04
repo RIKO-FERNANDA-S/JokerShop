@@ -27,7 +27,7 @@ import Img11 from"@/public/img/produk/premium/apk (11).jpg";
 import Img12 from"@/public/img/produk/premium/apk (12).jpg";
 
 // Font
-import TextKatalog from "./UI/textKatalog";
+import TextKatalog from "../UI/textKatalog";
 import { Poppins } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
@@ -56,6 +56,7 @@ function Katalog() {
             perPage: 5,
             gap: ".1rem",
             autoplay: true,
+            interval:3000
           }}
           aria-label="My Favorite Images"
         >
