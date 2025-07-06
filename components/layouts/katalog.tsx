@@ -45,7 +45,7 @@ function Katalog() {
       <TextKatalog/>
     </div>
 
-      <div className="w-full flex flex-col mt-8">
+      <div className="w-full flex flex-col mt-2">
         <div className="w-full flex justify-end pr-10">
         <Link href="/katalog" className="text-white">Lihat Lebih <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color:"white"}} className="ml-3" /></Link>
         </div>

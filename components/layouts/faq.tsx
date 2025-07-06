@@ -1,26 +1,18 @@
 "use client";
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import TextFaq from "../UI/textFaq";
-import { useState, useEffect, useRef } from "react";
 import { Poppins } from "next/font/google";
-
-// UNTUK ICON
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
-
-// UNTUK ANIMASI
 import gsap from "gsap";
+import Image from "next/image";
+import Img from "../../public/img/part/astro.png";
 
-
-
-// FONT POPPINS DARI GOOGLE FONT
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
 });
 
-
-// DATA PERTANYAAN DAN JAWABAN
 const questions = [
   {
     id: 1,
@@ -38,35 +30,43 @@ const questions = [
     id: 3,
     pertanyaan: "Bang, apakah ada aplikasi edukasi untuk belajar?",
     jawaban:
-      "waaahhh mantap nieh maniees, ada banget coba lihat di katalog atau sekalian lasngung tanya ke admin cuuy.   ",
+      "Waaahhh mantap nieh maniees, ada banget coba lihat di katalog atau sekalian langsung tanya ke admin cuuy.",
   },
   {
     id: 4,
-    pertanyaan: "Bang, laganan apa yang 1.500 rupiah itu?",
-    jawaban: "Harganya 1.500 rupiah itu untuk youtube premium 1 bulan.",
+    pertanyaan: "Bang, langganan apa yang 1.500 rupiah itu?",
+    jawaban: "Harganya 1.500 rupiah itu untuk YouTube Premium 1 bulan.",
   },
 ];
 
 function Informasi() {
   const [activeQ, setActiveQ] = useState<number | null>(null);
-  
-  const boxRef = useRef(null);
+  const [animasi, setAnimasi] = useState(true);
+  const answerRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    const tl = gsap.timeline()
+    if (activeQ === null) return;
 
-    tl.from(boxRef.current, {
-      y: -50,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-    })
-  }, [])
+    const index = questions.findIndex((q) => q.id === activeQ);
+    const el = answerRefs.current[index];
+
+    if (activeQ) {
+      gsap.fromTo(el, {opacity: 0.6, y:10},{ opacity: 1, y: 60, duration: 0.5, ease: "power2.inOut" });
+    }else{
+      gsap.to(el, {opacity: 0, y:10, ease: "power2.out", duration: 0.5})
+    }
+
+  }, [activeQ, questions]);
+  
+  const handleToggle = (id: number) => {
+    setActiveQ(activeQ === id ? null : id);
+  }
+
 
   return (
     <main
       id="faq"
-      className={`${poppins.className} h-screen w-full flex flex-col justify-start`}
+      className={`${poppins.className} h-max w-full flex flex-col justify-start`}
     >
       <section className="px-16 flex justify-center w-full h-32">
         <TextFaq />
@@ -75,13 +75,15 @@ function Informasi() {
         </h1>
       </section>
 
-      <section className="gap-7 text-white flex justify-start items-start w-full h-[27rem] mt-10 px-10">
-        <div className="w-3/4 flex flex-col gap-5">
-          {questions.map((q) => (
-            <div key={q.id} className="flex flex-col text-start w-full">
+      <section className="gap-7 text-white flex justify-between items-center w-full h-[27rem] mb-16 mt-5">
+        <div className="w-1/2 h-full flex flex-col justify-around ml-16 pb-10">
+          {questions.map((q, index) => (
+            <div key={q.id} className="flex w-full h-max gap-7 text-start ">
               <button
-                className={` bg-[#cd8dff] flex justify-between cursor-pointer items-center w-3xl px-10 py-6 border-l-[10px] border-[#4a5cc2]  shadow-2xl/30 shadow-white ${activeQ === q.id ? "rounded-t-xl" : "rounded-xl"}`}
-                onClick={() => setActiveQ(activeQ === q.id ? null : q.id)}
+                className={`bg-[#cd8dff] absolute z-10 flex justify-between cursor-pointer items-center w-xl px-10 py-6 border-l-[10px] border-[#4a5cc2] shadow-2xl/30 shadow-white ${
+                  activeQ === q.id ? "rounded-t-xl" : "rounded-xl"
+                }`}
+                onClick={() => handleToggle(q.id)}
               >
                 {q.pertanyaan}
                 {activeQ === q.id ? (
@@ -90,16 +92,23 @@ function Informasi() {
                   <FontAwesomeIcon icon={faPlus} />
                 )}
               </button>
+
               {activeQ === q.id && (
-                <div  className="w-3xl pl-5 py-5 bg-[#4a5cc2] rounded-b-xl">
-                  <p ref={boxRef} className="">{q.jawaban}</p>
+                <div
+                  ref={(el) => {
+                    answerRefs.current[index] = el;
+                  }}
+                  className="flex relative w-xl pl-5 py-5 bg-[#4a5cc2] rounded-b-xl"
+                >
+                  {q.jawaban}
                 </div>
               )}
             </div>
           ))}
         </div>
-        <div ref={boxRef} className="relative mt-8 w-max h-24 bg-[#742bacda]">
-          <p>adada </p>
+
+        <div className="flex z-10 justify-center w-1/2 h-full mt-6">
+          <Image className="w-[27em] h-full" src={Img} alt="astronout" />
         </div>
       </section>
     </main>
