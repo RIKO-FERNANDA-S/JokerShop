@@ -78,8 +78,9 @@ function Informasi() {
       <section className="gap-7 text-white flex justify-between items-center w-full h-[27rem] mb-16 mt-5">
         <div className="w-1/2 h-full flex flex-col justify-around ml-16 pb-10">
           {questions.map((q, index) => (
-            <div key={q.id} className="flex w-full h-max gap-7 text-start ">
+            <div data-aos="fade-right" key={q.id} className="flex w-full h-max gap-7 text-start ">
               <button
+              
                 className={`bg-[#cd8dff] absolute z-10 flex justify-between cursor-pointer items-center w-xl px-10 py-6 border-l-[10px] border-[#4a5cc2] shadow-2xl/30 shadow-white ${
                   activeQ === q.id ? "rounded-t-xl" : "rounded-xl"
                 }`}
