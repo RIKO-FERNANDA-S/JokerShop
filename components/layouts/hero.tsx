@@ -37,7 +37,7 @@ function Hero() {
         <Button/>
       </div>
 
-      <div className="w-full h-20 bg-linear-to-b from-[#4a5cc2cc] mask-t-from-1 to-[#0B0020] flex absolute z-10 -bottom-30"></div>
+      <div className="w-full h-20 bg-linear-to-b from-[#4a5cc2cc] mask-t-from-1 to-[#0B0020] flex absolute z-10 -bottom-30 max-md:-bottom-40"></div>
 
 
     </main>
