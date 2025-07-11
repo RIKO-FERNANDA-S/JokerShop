@@ -66,17 +66,17 @@ function Informasi() {
   return (
     <main
       id="faq"
-      className={`${poppins.className} h-max w-full flex flex-col justify-start`}
+      className={`${poppins.className} h-max gap-6 w-full flex flex-col justify-start`}
     >
-      <section className="px-16 flex justify-center w-full h-32">
-        <TextFaq />
-        <h1 className="relative z-[3] flex text-7xl mt-2 text-[#f2f5fd] font-bold">
+      <section className="px-16 flex justify-center w-full h-32 max-md:h-max">
+        <h1 className="relative z-[3] text-center flex text-7xl max-md:text-[2.4rem]  text-[#f2f5fd] font-bold">
           Frequently Asked Questions
         </h1>
+        <TextFaq />
       </section>
 
       <section className="gap-7 text-white flex justify-between items-center w-full h-[27rem] mb-16 mt-5">
-        <div className="w-1/2 h-full flex flex-col justify-around ml-16 pb-10">
+        <div className="w-1/2 max-md:w-full h-full flex flex-col justify-around ml-16 pb-10">
           {questions.map((q, index) => (
             <div data-aos="fade-right" key={q.id} className="flex w-full h-max gap-7 text-start ">
               <button
@@ -108,7 +108,7 @@ function Informasi() {
           ))}
         </div>
 
-        <div className="flex z-10 justify-center w-1/2 h-full mt-6">
+        <div className="flex max-md:hidden z-10 justify-center w-1/2 h-full mt-6 ">
           <Image className="w-[27em] h-full" src={Img} alt="astronout" />
         </div>
       </section>

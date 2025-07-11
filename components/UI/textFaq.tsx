@@ -10,7 +10,7 @@ const poppins = Poppins({
 function textFaq() {
   return (
     <main className='w-full absolute flex justify-center h-max'>
-    <h1 className={`${poppins.className} text-white flex items-center justify-center flex-col text-[5.5rem] font-bold bg-gradient-to-b from-[#ffffff69] from-[1%] to-[#99999900] h-max w-max text-outline-gradient`}>
+    <h1 className={`${poppins.className} text-white flex items-center justify-center flex-col text-[5.5rem] max-md:text-[2.7rem] font-bold bg-gradient-to-b from-[#ffffff69] from-[1%] to-[#99999900] h-max w-max text-outline-gradient`}>
         Frequently Asked Questions
     </h1>
     </main>
