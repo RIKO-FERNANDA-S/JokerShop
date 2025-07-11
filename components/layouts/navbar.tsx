@@ -101,15 +101,15 @@ function Navbar() {
       <section className={`max-md:flex ${poppins.className} hidden w-full justify-end {Active} `}>
         
         {Active && (
-          <div ref={menuRef} className="bg-[#4a5cc241] backdrop-blur-[2px] w-1/2 h-screen z-30 fixed p-5 flex flex-col">
-            <div>
+          <div ref={menuRef} className="bg-[#4a5cc2c7] backdrop-blur-[2px] w-full h-max z-20 fixed p-5 flex ">
+            <div className="absolute flex w-max ">
             <FontAwesomeIcon icon={faXmark} className="fa-xl" color="white" onClick={() => setActive(!Active)}/>
             </div>
-                <div className="flex text-white flex-col gap-9 mt-10 w-full text-center">
-                    <h1>Home</h1>
-                    <h1>Tentang</h1>
-                    <h1>Katalog</h1>
-                    <h1>FAQ</h1>
+                <div className="flex relative text-white flex-col gap-8 my-7 w-full text-center items-center">
+                    <Link href="#" className="text-shadow-md text-xl border-b-2 border-[#ffffff8f] w-max pb-3 px-32 text-shadow-[#ffff]">Home</Link>
+                    <Link href="#tentang" className="text-shadow-md text-xl border-b-2 border-[#ffffff8f] w-max pb-3 px-32 text-shadow-[#ffff]">Tentang</Link>
+                    <Link href="#katalog" className="text-shadow-md text-xl border-b-2 border-[#ffffff8f] w-max pb-3 px-32 text-shadow-[#ffff]">Katalog</Link>
+                    <Link href="#faq" className="text-shadow-md text-xl border-b-2 border-[#ffffff8f] w-max pb-3 px-32 text-shadow-[#ffff]">FAQ</Link>
                 </div>
           </div>
         )}
