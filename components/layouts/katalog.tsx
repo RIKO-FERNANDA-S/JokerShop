@@ -37,7 +37,7 @@ const poppins = Poppins({
 function Katalog() {
   return (
     <main
-      className={`w-full h-screen flex flex-col items-center justify-start ${poppins.className}`}
+      className={`w-full h-screen max-md:h-max max-md:mb-52 flex flex-col items-center justify-start ${poppins.className}`}
       id="katalog"
     >
     
@@ -56,7 +56,12 @@ function Katalog() {
             perPage: 5,
             gap: ".1rem",
             autoplay: true,
-            interval:3000
+            interval:3000,
+            breakpoints: {
+              768: {
+                perPage: 3,
+              }
+            }
           }}
           aria-label="My Favorite Images"
         >
