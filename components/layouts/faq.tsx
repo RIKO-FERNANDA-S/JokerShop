@@ -51,7 +51,7 @@ function Informasi() {
     const el = answerRefs.current[index];
 
     if (activeQ) {
-      gsap.fromTo(el, {opacity: 0.6, y:10},{ opacity: 1, y: 60, duration: 0.5, ease: "power2.inOut" });
+      gsap.fromTo(el, {opacity: 0.6, y:-20},{ opacity: 1, y: -9, duration: 0.5, ease: "power2.inOut" });
     }else{
       gsap.to(el, {opacity: 0, y:10, ease: "power2.out", duration: 0.5})
     }
@@ -69,26 +69,26 @@ function Informasi() {
       className={`${poppins.className} h-max gap-6 w-full flex flex-col justify-start`}
     >
       <section className="px-16 flex justify-center w-full h-32 max-md:h-max">
-        <h1 className="relative z-[3] text-center flex text-7xl max-md:text-[2.4rem]  text-[#f2f5fd] font-bold">
+        <h1 className="relative z-[3] text-center leading-13 flex text-7xl max-md:text-[2rem]  text-[#f2f5fd] font-bold">
           Frequently Asked Questions
         </h1>
         <TextFaq />
       </section>
 
-      <section className="gap-7 text-white flex justify-between items-center w-full h-[27rem] mb-16 mt-5">
-        <div className="w-1/2 max-md:w-full h-full flex flex-col justify-around ml-16 pb-10">
+      <section className=" text-white min-md:flex justify-between items-center w-full h-max mb-16 mt-5">
+        <div className="flex flex-col min-md:gap-2 max-md:h-max w-1/2 max-md:w-full h-full max-md:items-start min-md:flex min-md:flex-col min-md:justify-around ml-16 max-md:ml-1 pb-10">
           {questions.map((q, index) => (
-            <div data-aos="fade-right" key={q.id} className="flex w-full h-max gap-7 text-start ">
+            <div  key={q.id} className="min-md:flex flex flex-col w-full max-md:w-full max-md:justify-center max-md:items-center h-max text-start ">
               <button
               
-                className={`bg-[#cd8dff] absolute z-10 flex justify-between cursor-pointer items-center w-xl px-10 py-6 border-l-[10px] border-[#4a5cc2] shadow-2xl/30 shadow-white ${
-                  activeQ === q.id ? "rounded-t-xl" : "rounded-xl"
+                className={`z-[2] flex bg-[#cd8dff] max-md:my-2 h-max text-start justify-between cursor-pointer items-center w-xl max-md:w-xs px-10 max-md:px-4 max-md:text-xs py-6 border-l-[10px] border-[#4a5cc2] shadow-2xl/30 shadow-white ${
+                  activeQ === q.id ? "rounded-t-xl " : "rounded-xl"
                 }`}
                 onClick={() => handleToggle(q.id)}
               >
                 {q.pertanyaan}
                 {activeQ === q.id ? (
-                  <FontAwesomeIcon icon={faMinus} />
+                  <FontAwesomeIcon icon={faMinus}  />
                 ) : (
                   <FontAwesomeIcon icon={faPlus} />
                 )}
@@ -99,7 +99,7 @@ function Informasi() {
                   ref={(el) => {
                     answerRefs.current[index] = el;
                   }}
-                  className="flex relative w-xl pl-5 py-5 bg-[#4a5cc2] rounded-b-xl"
+                  className="-z-10 flex w-xl max-md:w-xs max-md:text-xs max-md:pl-2 pl-5 py-5 bg-[#4a5cc2] rounded-b-xl"
                 >
                   {q.jawaban}
                 </div>
@@ -108,7 +108,7 @@ function Informasi() {
           ))}
         </div>
 
-        <div className="flex max-md:hidden z-10 justify-center w-1/2 h-full mt-6 ">
+        <div className="flex max-md:hidden z-10 justify-center w-1/2 h-full ">
           <Image className="w-[27em] h-full" src={Img} alt="astronout" />
         </div>
       </section>
