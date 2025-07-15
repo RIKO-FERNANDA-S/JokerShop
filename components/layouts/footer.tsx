@@ -21,10 +21,10 @@ function footer() {
         <section className='w-full h-max py-5 flex justify-center items-center bg-[#7a1ea8c5]'>
             <Image src={logo} alt='Logo Joker Shop' width={200}/>
         </section>
-        <section className={`${poppins.className} w-full h-max py-4 px-16 flex justify-between bg-[#4b1566]`}>
+        <section className={`${poppins.className} w-full flex-wrap h-max py-4 max-md:px-0.5 px-16 flex max-md:text-center justify-between bg-[#4b1566] max-md:gap-5`}>
             <h2>Joker Store © COPYRIGHT 2025. ALL RIGHTS RESERVED. Create By RIKO FERNANDA SAPUTRA</h2>
             
-            <article className='flex flex-wrap gap-5 items-center'>
+            <article className='flex flex-wrap gap-5 items-center w-full justify-center'>
                 <Link href="https://www.instagram.com/storegame_joker?utm_source=ig_web_button_share_sheet&igsh=MWd1cDFhOXY2aXF1Nw==">
                 <Image src={Instagram} alt='LOGO SOCIAL MEDIA' width={28} color='white'/>
                 </Link>
