@@ -52,11 +52,11 @@ function Button() {
 
   return (
     <Link
-      href="/"
+      href="https://wa.me/62882009466583"
       ref={buttonRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="w-52 min-md:w-[38rem] h-16 flex outline-1 outline-[#A6BFF6] hover:outline-[#305ec2]"
+      className="w-64 min-md:w-[38rem] h-16 flex outline-1 outline-[#A6BFF6] hover:outline-[#305ec2]"
     >
       <div
         className={`${poppins1.className} bg-[#A6BFF6] relative overflow-hidden select-none w-full h-full flex items-center justify-center`}
