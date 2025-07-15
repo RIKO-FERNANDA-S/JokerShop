@@ -88,9 +88,9 @@ function Informasi() {
               >
                 {q.pertanyaan}
                 {activeQ === q.id ? (
-                  <FontAwesomeIcon icon={faMinus}  />
+                  <FontAwesomeIcon icon={faMinus} className="ml-2"  />
                 ) : (
-                  <FontAwesomeIcon icon={faPlus} />
+                  <FontAwesomeIcon icon={faPlus} className="ml-2"/>
                 )}
               </button>
 
