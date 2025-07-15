@@ -41,7 +41,7 @@ const questions = [
 
 function Informasi() {
   const [activeQ, setActiveQ] = useState<number | null>(null);
-  const [animasi, setAnimasi] = useState(true);
+  
   const answerRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ function Informasi() {
       gsap.to(el, {opacity: 0, y:10, ease: "power2.out", duration: 0.5})
     }
 
-  }, [activeQ, questions]);
+  }, [activeQ]);
   
   const handleToggle = (id: number) => {
     setActiveQ(activeQ === id ? null : id);

@@ -1,5 +1,5 @@
 "use client";
-import React, { HTMLAttributeAnchorTarget, useRef } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import logo from "@/public/img/logo/2.png";
 import { Poppins } from "next/font/google";
