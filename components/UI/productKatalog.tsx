@@ -113,107 +113,107 @@ function ProductKatalog() {
 
 
   return (
-    <main className='w-full pt-20 flex flex-col gap-7 '>
+    <main className='w-full pt-20 flex flex-col gap-7 max-md:pt-5 '>
       <div className='flex flex-wrap justify-center gap-7 px-2'>
-      <Image src={img1} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img2} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img3} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img4} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img5} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img6} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img7} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img8} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img9} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img10} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img11} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img12} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img13} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img14} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img15} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img16} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img17} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img18} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img19} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img20} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img21} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img22} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img23} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img24} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img25} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img26} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img27} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img28} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img29} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img30} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img31} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img32} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img33} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img34} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img35} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img36} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img37} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img38} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img39} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img40} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img41} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img42} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img43} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img44} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img45} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
+      <Image src={img1} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img2} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img3} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img4} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img5} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img6} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img7} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img8} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img9} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img10} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img11} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img12} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img13} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img14} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img15} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img16} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img17} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img18} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img19} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img20} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img21} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img22} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img23} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img24} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img25} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img26} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img27} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img28} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img29} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img30} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img31} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img32} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img33} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img34} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img35} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img36} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img37} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img38} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img39} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img40} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img41} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img42} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img43} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img44} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img45} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
       </div>
 
       {viewMore ? 
       <div className='w-full flex flex-wrap justify-center gap-7 px-2' >
-      <Image src={img46} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img47} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img48} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img49} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img50} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img51} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img52} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img53} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img54} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img55} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img56} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img57} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img58} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img59} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img60} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img61} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img62} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img63} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img64} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img65} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img66} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img67} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img68} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img69} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img70} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img71} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img72} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img73} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img74} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img75} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img76} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img77} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img78} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img79} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img80} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img81} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img82} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img83} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img84} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img85} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img86} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img87} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img88} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img89} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
-      <Image src={img90} alt='img' data-aos='flip-left' loading='lazy' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105'></Image>
+      <Image src={img46} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img47} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img48} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img49} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img50} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img51} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img52} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img53} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img54} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img55} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img56} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img57} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img58} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img59} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img60} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img61} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img62} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img63} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img64} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img65} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img66} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img67} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img68} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img69} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img70} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img71} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img72} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img73} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img74} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img75} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img76} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img77} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img78} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img79} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img80} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img81} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img82} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img83} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img84} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img85} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img86} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img87} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img88} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img89} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
+      <Image src={img90} alt='img' data-aos='flip-left' className='w-60 border-2 border-white hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out hover:scale-105 max-md:w-24'></Image>
       </div>
       : <p></p> }
       
       <div className='w-full flex justify-center py-10'>
-      <button onClick={toggle} className={`${poppins2.className} bg-[#6E2D9F] cursor-pointer px-20 w-max py-1 h-max rounded-2xl shadow-[3px_3px_#A6BFF6] hover:translate-1 transition-all hover:shadow-none`}>
+      <button onClick={toggle} className={`text-white py-2 ${poppins2.className} bg-[#6E2D9F] cursor-pointer px-20 w-max py-1 h-max rounded-2xl shadow-[3px_3px_#A6BFF6] hover:translate-1 transition-all hover:shadow-none`}>
         {!viewMore ? 'Lihat Banyak' : 'Lihat Sedikit'}
       </button>
       </div>
