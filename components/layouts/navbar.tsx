@@ -49,7 +49,7 @@ function Navbar() {
   return (
     <main className="fixed w-full z-20">
       <div
-        className={`w-full  flex z-10 px-6 min-md:px-20 py-5 justify-between items-center absolute transition-all ease-in ${
+        className={`w-full  flex z-10 px-6 min-md:px-20 py-5 justify-start gap-72 items-center absolute transition-all ease-in ${
           Oscroll
             ? "bg-[#4a5cc241] backdrop-blur-[2px] h-20"
             : "bg-transparent h-32"
@@ -80,15 +80,7 @@ function Navbar() {
           </Link>
         </div>
 
-        <button className="hidden min-md:flex bg-[#E0B7FF] h-max px-4 py-2 items-center gap-3 rounded-full cursor-pointer hover:shadow-[0_0_25px] hover:shadow-[#712398] transition-all ease-in-out ">
-          <h1
-            className={`${poppins.className} text-[#200041] text-md font-semibold`}
-          >
-            IDN
-          </h1>
-          <Image src={flagIDN} alt="indonesia" className="w-6"></Image>
-          {/* <Image src={flagUK} alt='United-kindom'></Image> */}
-        </button>
+       
         <div className="max-md:flex hidden">
             <FontAwesomeIcon
           onClick={() => setActive(!Active)}
