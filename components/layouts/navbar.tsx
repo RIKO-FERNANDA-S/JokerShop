@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import logo from "@/public/img/logo/2.png";
 import { Poppins } from "next/font/google";
-import flagIDN from "@/public/img/language/idn.png";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
